@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a91e1e;
+}
+
+.heading {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem; 
+    margin-bottom: 1rem;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.main-nav {
+    background-color: #333;
+    padding: 1rem 0; 
+    margin-bottom: 2rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #667eea; 
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 1rem;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 3rem; 
+    padding: 2rem; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; 
+    margin-bottom: 3rem;
+}
+.card-container :hover{
+    transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.padding-demo {
+    padding: 3rem; 
+    background-color: #e3f2fd; 
+}
+
+.margin-demo {
+    margin: 2rem; 
+    background-color: #f3e5f5; 
+}
+.border-demo {
+    border: 4px dashed #ff6b6b; 
+    background-color: #fff3e0; 
+}
+
+.box-model-visual {
+    background-color: #bbdefb;
+    padding: 1rem;
+    border: 2px solid #1976d2;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 4px;
+}
+.category-card{
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border: 2px solid transparent;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           border-style: groove;
+            margin: 0 auto 1rem;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        
+        .category-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+.typography-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text-example {
+    margin: 1rem 0; 
+    padding: 1rem; 
+    border-left: 4px solid #ddd; 
+}
+
+.color-demo {
+    color: #e74c3c;
+    background-color: #ffebee; 
+}
+
+.size-demo {
+    font-size: 1.5rem; 
+    background-color: #e8f5e9; 
+}
+
+.align-demo {
+    text-align: center; 
+    background-color: #e3f2fd;
+    font-weight: bold;
+}
+
+.cta-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    background-color: #667eea;
+    color: white;
+    padding: 1rem 2rem; 
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #5a67d8;
+    transform: translateY(-2px); 
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem; 
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .site-header h1 {
+        font-size: 2rem;
+    }
+}
